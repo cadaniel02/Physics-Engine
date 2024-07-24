@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build with MSYS2",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/src/FlatVector.cpp",
+                "${workspaceFolder}/src/FlatBody.cpp",
+                "${workspaceFolder}/src/FlatMath.cpp",
+                "-o",
+                "${workspaceFolder}/sfml-app",
+                "-I",
+                "C:/msys64/ucrt64/include",
+                "-L",
+                "C:/msys64/ucrt64/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task for building SFML application with MSYS2."
+        }
+    ],
+    "version": "2.0.0"
+}
